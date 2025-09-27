@@ -19,7 +19,7 @@ def test_summarize_handles_numbers() -> None:
     summary = summarize([1, 2, 3, 4])
 
     assert isinstance(summary, Summary)
-    assert summary.count == 5
+    assert summary.count == 4
     assert math.isclose(summary.total, 10)
     assert math.isclose(summary.average, 2.5)
     assert summary.minimum == 1
